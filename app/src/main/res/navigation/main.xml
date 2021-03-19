@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.deliversystem.ui.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_deliveryListFragment"
+            app:destination="@id/deliveryListFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/deliveryListFragment"
+        android:name="com.example.deliversystem.ui.deliverylist.DeliveryListFragment"
+        android:label="My Deliveries"
+        tools:layout="@layout/fragment_delivery_list" >
+        <action
+            android:id="@+id/action_deliveryListFragment_to_deliveryDetailsFragment"
+            app:destination="@id/deliveryDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deliveryDetailsFragment"
+        android:name="com.example.deliversystem.ui.deliverdetail.DeliveryDetailsFragment"
+        android:label="Delivery Details"
+        tools:layout="@layout/fragment_delivery_details" >
+
+    </fragment>
+</navigation>

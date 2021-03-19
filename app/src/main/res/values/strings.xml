@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Deliver System</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_deliveries">My Deliveries</string>
+    <string name="product_image">Product Image</string>
+    <string name="favorite_indicator_picture">Favorite Indicator picture</string>
+    <string name="delivery_fee">Delivery Fee</string>
+    <string name="goods_to_deliver">Goods to deliver</string>
+</resources>
